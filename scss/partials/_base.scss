@@ -1,0 +1,127 @@
+@import '../modules/colors';
+@import '../modules/fonts';
+@import '../modules/mixins';
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: $body-font-stack;
+	font-size: 16px;
+	line-height: 1.25;
+}
+
+a {
+	@include link-colors($black, $black, $black, lighten($black, 20%));
+}
+
+a img,
+img {
+	max-width: 100%;
+	outline: none;
+	border: none;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto 10px;
+	height: auto;
+}
+
+.alignright {
+	display: block;
+	margin: 0 auto 10px;
+	height: auto;
+
+	@include media-query(min-sm) {
+		float: right;
+		margin: 0 0 10px 10px;
+	}
+}
+
+.alignleft {
+	display: block;
+	margin: 0 auto 10px;
+	height: auto;
+
+	@include media-query(min-sm) {
+		float: left;
+		margin: 0 10px 10px 0;
+	}
+}
+
+.container,
+.container-fluid {
+	.row {
+		&.row-no-gutters {
+			margin-right: 0;
+			margin-left: 0;
+
+			[class*="col-"] {
+				padding-right: 0;
+				padding-left: 0;
+			}
+		}
+
+		&.row-centered {
+			text-align: center;
+			font-size: 0;
+
+			[class*="col-"] {
+				float: none;
+				display: inline-block;
+				vertical-align: top;
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+.container-fluid {
+	.row {
+		&.row-no-gutters {
+			margin-right: -15px;
+			margin-left: -15px;
+		}
+	}
+}
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.col-xs-5ths {
+	width: 20%;
+}
+
+@include media-query(min-sm) {
+	.col-sm-5ths {
+		width: 20%;
+	}
+}
+
+@include media-query(min-md) {
+	.col-md-5ths {
+		width: 20%;
+	}
+}
+
+@include media-query(min-lg) {
+	.col-lg-5ths {
+		width: 20%;
+	}
+}
+
+@include media-query('min-width: 1400px') {
+	.col-xl-5ths {
+		width: auto;
+	}
+}

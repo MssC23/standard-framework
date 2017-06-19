@@ -1,0 +1,32 @@
+.footer-links {
+	ul {
+		list-style: none;
+		padding: 0;
+		font-size: 0;
+
+		li {
+			display: inline-block;
+
+			a {
+				padding: 5px 10px;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+.footer-left {
+	text-align: center;
+
+	@include media-query(min-md) {
+		text-align: left;
+	}
+}
+
+.footer-right {
+	text-align: center;
+
+	@include media-query(min-md) {
+		text-align: right;
+	}
+}

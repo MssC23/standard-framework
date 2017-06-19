@@ -1,0 +1,49 @@
+.btn {
+	&.btn-black {
+		background-color: $black;
+		border-color: $black;
+		color: $white;
+
+		&:hover {
+			background-color: lighten($black, 10%);
+			border-color: lighten($black, 10%);
+			color: $white;
+		}
+
+		&:focus {
+			background-color: lighten($black, 15%);
+			border-color: lighten($black, 15%);
+			color: $white;
+		}
+
+		&:active:focus {
+			background-color: $black;
+			border-color: $black;
+			color: $white;
+		}
+	}
+
+	&.btn-white {
+		background-color: $white;
+		border-color: $white;
+		color: $black;
+
+		&:hover {
+			background-color: darken($white, 10%);
+			border-color: darken($white, 10%);
+			color: $black;
+		}
+
+		&:focus {
+			background-color: darken($white, 15%);
+			border-color: darken($white, 15%);
+			color: $black;
+		}
+
+		&:active:focus {
+			background-color: $white;
+			border-color: $white;
+			color: $black;
+		}
+	}
+}

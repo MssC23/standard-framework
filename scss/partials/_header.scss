@@ -1,0 +1,45 @@
+.navbar {
+	.navbar-toggle {
+		margin: 0;
+		padding: 18px 15px;
+		border: 0;
+		border-radius: 0;
+
+		.icon-bar {
+			border-radius: 0;
+		}
+	}
+}
+
+.navbar-default {
+	background: $white;
+	border: none;
+	border-radius: 0;
+
+	.navbar-brand {
+		height: auto;
+		color: $black;
+	}
+
+	.navbar-nav {
+		> li {
+			> a {
+				color: $black;
+
+				&:hover,
+				&:focus {
+					color: lighten($black, 15%);
+				}
+			}
+
+			&.active {
+				> a,
+				> a:focus,
+				> a:hover {
+					background: none;
+					color: lighten($black, 15%);
+				}
+			}
+		}
+	}
+}
