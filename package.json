@@ -1,21 +1,21 @@
 {
-  "name": "jwdmc-framework",
+  "name": "standard-framework",
   "version": "2.7.0",
-  "description": "Framework for JWDMC projects",
+  "description": "Framework for wordpress projects",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jdugdown/JWDMC-Framework.git"
+    "url": "git+https://github.com/MssC23/standard-framework.git"
   },
   "author": "Josh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jdugdown/JWDMC-Framework/issues"
+    "url": "https://github.com/MssC23/standard-framework/issues"
   },
-  "homepage": "https://github.com/jdugdown/JWDMC-Framework#readme",
+  "homepage": "https://github.com/MssC23/standard-framework#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
